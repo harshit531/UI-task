@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Network Op Status"
+AuthUserFile /home/web/public_html/reportingserver.codify.tech/noc/.htpasswd
+Require valid-user

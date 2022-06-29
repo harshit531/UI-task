@@ -1,0 +1,488 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   .navbar, .navbar-static-top {
+       position:relative;
+       /*padding:30px 0;*/
+       color:#ffffff;
+       text-align:center;
+       text-shadow:0 1px 0 rgba(0,0,0,.1);
+       background-color:#6f5499;
+       background-image:-webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+       background-image:-webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+       background-image:-o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+       background-image:linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+       background-repeat:repeat-x;
+   }
+   .navbar-default .navbar-text {
+     color: #fff;
+   }
+   .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+.emp-data {
+    width: 100%;
+}
+   .navbar-default .navbar-nav > li > a {
+       color: #fff;
+   }
+
+   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+       color: #e0e0e0;
+       background-color: transparent;
+   }
+
+   .navbar-default .navbar-brand {
+       color: #ffffff;
+   }
+
+   .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+      position: absolute;
+      right: 5%;
+      left: auto;
+      border: 1px solid #ddd;
+      background: #fff
+   }
+
+   .navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+      height: 175px;
+      padding: 10px;
+      text-align: center;
+   }
+
+   .navbar-nav>.user-menu>.dropdown-menu>.user-body {
+      padding: 15px;
+      border-bottom: 1px solid #f4f4f4;
+      border-top: 1px solid #dddddd
+   }
+
+   .navbar-nav > .user-menu > .dropdown-menu {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 1px 0 0 0;
+    border-top-width: 0;
+    width: 280px
+  }
+
+    .navbar-nav > .user-menu > .dropdown-menu, .navbar-nav > .user-menu > .dropdown-menu > .user-body {
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+        height: 175px;
+        padding: 10px;
+        text-align: center
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
+        z-index: 5;
+        height: 90px;
+        width: 90px;
+        border: 3px solid;
+        border-color: transparent;
+        border-color: rgba(255, 255, 255, 0.2)
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+        z-index: 5;
+        color: #fff;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 17px;
+        margin-top: 10px
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p > small {
+        display: block;
+        font-size: 12px
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body {
+        padding: 15px;
+        border-bottom: 1px solid #f4f4f4;
+        border-top: 1px solid #dddddd
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body:before, .navbar-nav > .user-menu > .dropdown-menu > .user-body:after {
+        content: " ";
+        display: table
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body:after {
+        clear: both
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+        color: #444 !important
+    }
+
+    @media (max-width:991px) {
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+        background: #fff !important;
+        color: #444 !important
+    }
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+    background-color: #f9f9f9;
+    padding: 10px
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer:before, .navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+    content: " ";
+    display: table
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+    clear: both
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {
+    color: #666666
+}
+
+@media (max-width:991px) {
+    .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {
+        background-color: #f9f9f9
+    }
+}
+
+.navbar-nav > .user-menu .user-image {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px
+}
+
+@media (max-width:767px) {
+    .navbar-nav > .user-menu .user-image {
+        float: none;
+        margin-right: 0;
+        margin-top: -8px;
+        line-height: 10px
+    }
+}
+
+    .dropdown-menu {
+      background-color: #6f5499;
+    }
+
+
+
+   /*overlay*/
+   #customerPhoneNumber.ng-invalid,
+   #customerFirstName.ng-invalid,
+   #customerPhoneNumber.ng-dirty.ng-empty,
+   #customerFirstName.ng-dirty.ng-empty {
+       border-width: 1px;
+       border-color: red;
+   }
+
+   #customerPhoneNumber.ng-invalid,
+   #customerFirstName.ng-invalid {
+       border-width: 1px;
+       border-color: red;
+   }
+   /* Login Overlay CSS */
+   /* The Overlay (background) */
+
+   .overlay {
+       /* Height & width depends on how you want to reveal the overlay (see JS below) */
+       height: 100%;
+       width: 0;
+       position: fixed;
+       /* Stay in place */
+       z-index: 9999;
+       /* Sit on top */
+       left: 0;
+       top: 0;
+       background-color: rgb(0, 0, 0);
+       /* Black fallback color */
+       background-color: rgba(12, 2, 34, 0.9);
+       /* Black w/opacity */
+       overflow-x: hidden;
+       /* Disable horizontal scroll */
+       transition: 0.5s;
+       /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+   }
+   /* Position the content inside the overlay */
+
+   .overlay-content {
+       position: relative;
+       top: 5%;
+       /* 25% from the top */
+       width: 100%;
+       /* 100% width */
+       color: whitesmoke;
+       text-align: center;
+       /* Centered text/links */
+       margin-top: 30px;
+       /* 30px top margin to avoid conflict with the close button on smaller screens */
+   }
+
+   .overlay a,
+   a:hover,
+   .overlay a:focus {
+       color: #ffffff;
+       text-decoration: none;
+   }
+
+   @media screen and (max-height: 450px) {
+       .overlay a {
+           font-size: 20px
+       }
+       .overlay {
+           font-size: 40px;
+           top: 15px;
+           right: 35px;
+       }
+   }
+   /* Loading SVG */
+
+   .loader {
+       position: relative;
+       margin: 0px auto;
+       width: 100px;
+       height: 100px;
+       zoom: 1.7;
+   }
+
+   .circular {
+       -webkit-animation: rotate 2s linear infinite;
+       animation: rotate 2s linear infinite;
+       height: 100px;
+       position: relative;
+       width: 100px;
+   }
+
+   .path {
+       stroke-dasharray: 1, 200;
+       stroke-dashoffset: 0;
+       -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+       animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+       stroke-linecap: round;
+   }
+
+   @-webkit-keyframes rotate {
+       100% {
+           -webkit-transform: rotate(360deg);
+           transform: rotate(360deg);
+       }
+   }
+
+   @keyframes rotate {
+       100% {
+           -webkit-transform: rotate(360deg);
+           transform: rotate(360deg);
+       }
+   }
+
+   @-webkit-keyframes dash {
+       0% {
+           stroke-dasharray: 1, 200;
+           stroke-dashoffset: 0;
+       }
+       50% {
+           stroke-dasharray: 89, 200;
+           stroke-dashoffset: -35;
+       }
+       100% {
+           stroke-dasharray: 89, 200;
+           stroke-dashoffset: -124;
+       }
+   }
+
+   @keyframes dash {
+       0% {
+           stroke-dasharray: 1, 200;
+           stroke-dashoffset: 0;
+       }
+       50% {
+           stroke-dasharray: 89, 200;
+           stroke-dashoffset: -35;
+       }
+       100% {
+           stroke-dasharray: 89, 200;
+           stroke-dashoffset: -124;
+       }
+   }
+
+   @-webkit-keyframes color {
+       100%,
+       0% {
+           stroke: #d62d20;
+       }
+       40% {
+           stroke: #0057e7;
+       }
+       66% {
+           stroke: #008744;
+       }
+       80%,
+       90% {
+           stroke: #ffa700;
+       }
+   }
+
+   @keyframes color {
+       100%,
+       0% {
+           stroke: #d62d20;
+       }
+       40% {
+           stroke: #0057e7;
+       }
+       66% {
+           stroke: #008744;
+       }
+       80%,
+       90% {
+           stroke: #ffa700;
+       }
+   }
+
+   /*lockscreen*/
+   .lockscreen {
+     background: #d2d6de;
+   }
+   .lockscreen-logo {
+     font-size: 35px;
+     text-align: center;
+     margin-bottom: 25px;
+     font-weight: 300;
+   }
+   .lockscreen-logo a {
+     color: #444;
+   }
+   .lockscreen-wrapper {
+     max-width: 400px;
+     margin: 0 auto;
+     margin-top: 10%;
+   }
+   /* User name [optional] */
+   .lockscreen .lockscreen-name {
+     text-align: center;
+     font-weight: 600;
+   }
+   /* Will contain the image and the sign in form */
+   .lockscreen-item {
+     border-radius: 4px;
+     padding: 0;
+     background: #fff;
+     position: relative;
+     margin: 10px auto 30px auto;
+     width: 290px;
+   }
+   /* User image */
+   .lockscreen-image {
+     border-radius: 50%;
+     position: absolute;
+     left: -10px;
+     top: -25px;
+     background: #fff;
+     padding: 5px;
+     z-index: 10;
+   }
+   .lockscreen-image > img {
+     border-radius: 50%;
+     width: 70px;
+     height: 70px;
+   }
+   /* Contains the password input and the login button */
+   .lockscreen-credentials {
+     margin-left: 70px;
+   }
+   .lockscreen-credentials .form-control {
+     border: 0;
+   }
+   .lockscreen-credentials .btn {
+     background-color: #fff;
+     border: 0;
+     padding: 0 10px;
+   }
+   .lockscreen-footer {
+     margin-top: 10px;
+   }
+   /*lockscreen ends here*/
+
+   .btn-menu {
+     font-size: 18px;
+     margin-bottom: 4px;
+   }
+
+   .btn-menu-items {
+     margin-right: 4px;
+   }
+
+   /* isVegetarian is true */
+   .btn-border-green {
+     background-color: #fff;
+     color: #008d4c;
+     border-color: #008d4c;
+     font-size: 15px;
+     margin-right: 5px;
+   }
+
+   /* isVegetarian is false */
+   .btn-border-red {
+     background-color: #fff;
+     color: #d73925;
+     border-color: #d73925;
+     font-size: 15px;
+     margin-right: 5px;
+   }
+/*employee dropdown*/
+.main-header li.user-header {
+    background-color: #3c8dbc
+}
+
+.categories {
+  margin-bottom: 10px;
+}
+
+
+.btn-cat {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.btn-menu {
+  margin-right: 4px;
+}
+
+.jumbotron {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none
+}
+
+a:hover, a:focus {
+    color: #fefefe;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
