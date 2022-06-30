@@ -47,7 +47,9 @@
     text-decoration: none;
     cursor: pointer;
 }
+@media (max-width: 620px){
 .table-container{
     max-height: 500px;
     overflow-y: scroll;
+}
 }
