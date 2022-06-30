@@ -49,7 +49,7 @@
 }
 @media (max-width: 620px){
 .table-container{
-    max-height: 500px;
+    max-height: 1000px;
     overflow-y: scroll;
 }
 }
