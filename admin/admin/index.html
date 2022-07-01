@@ -118,39 +118,39 @@
             <div class="row">
                 <div class="col-lg-12" style="background: #fff;
             ">
-                    <div class="table-container">
-                        <div class="d-flex justify-content-between mb-3"
-                        style="display: flex;justify-content: space-between;">
-                            <h2>Data Table</h2>
-                            <a href="#" class="btn btn-sm btn btn-info"style="height: 100%; margin-top: 25px;">Add Data</a>
-                        </div>
-                        <table class="table table-bordered table-striped mb-0">
-                            <thead class="thead-dark">
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Company</th>
-                                <th scope="col">Sales</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr ng-repeat="(key, o) in nucs">
-                                
-                                <td>{{o.id}}    </td>
-                                <td>{{o.store}}</td>
-                                <td> {{nuc[o.id].server}}</td>
-                                <td>Sale 0238</td>
-                                <td>{{nuc[o.id].latestorder}}</td>
-                                <td><div ng-hide="{{o.isonline}}"><a href="#" class="btn btn-sm btn-danger">Rejected</a></div><div ng-show="{{o.isonline}}"><a href="#" class="btn btn-sm btn-success ml-4">Paid</a> </div>
-                                </td><td><i class="fa fa-eye" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
+                  <div class="table-container">
+                    <div class="d-flex justify-content-between mb-3"
+                    style="display: flex;justify-content: space-between;">
+                        <h2>RetailIQ DASHBOARD</h2>
+                        <a href="#" class="btn btn-sm btn btn-info"style="height: 100%; margin-top: 25px;">Add Data</a>
                     </div>
+                    <table class="table table-bordered table-striped mb-0">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Store Name</th>
+                            <th scope="col">API URL</th>
+                            <th scope="col">Plan</th>
+                            <th scope="col">Server Time</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="(key, o) in nucs">
+                            
+                            <td>{{o.id}}    </td>
+                            <td>{{o.store}}</td>
+                            <td> {{nuc[o.id].server}}</td>
+                            <td>Sale 0238</td>
+                            <td>{{nuc[o.id].latestorder}}</td>
+                            <td><div ng-hide="{{o.isonline}}"><a href="#" class="btn btn-sm btn-danger">Rejected</a></div><div ng-show="{{o.isonline}}"><a href="#" class="btn btn-sm btn-success ml-4">Paid</a> </div>
+                            </td><td><i class="fa fa-eye" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
                     
                 </div>
             </div>
