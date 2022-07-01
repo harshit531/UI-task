@@ -47,10 +47,10 @@
     text-decoration: none;
     cursor: pointer;
 }
-@media (max-width: 620px){
 .table-container{
+    /* Why Give max-height */
     max-height: 100%;
     height: 75vh;
     overflow-y: scroll;
 }
-}
+
